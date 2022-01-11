@@ -26,6 +26,9 @@ public class Game {
     }
 
     private void startGame() {
+        // Set computer's answer
+        this.computer.createAnswer();
+
         // Finished, if correct answer
     }
 
