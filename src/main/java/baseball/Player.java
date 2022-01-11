@@ -1,6 +1,8 @@
 package baseball;
 
+import java.util.HashMap;
 import java.util.InputMismatchException;
+import java.util.Map;
 import nextstep.utils.Console;
 
 import static utils.Constant.*;
@@ -41,7 +43,7 @@ class Player {
 
     private boolean checkStringLength(int maxSize, String numString) {
         if(numString.length() <= maxSize) return true;
-        else return false;
+        return false;
     }
 
     private int[] stringToArray(String str) {

@@ -49,8 +49,8 @@ public class Game {
             try {
                 String command = Console.readLine();
                 if(command.equals(RESTART_GAME)) return ON_GOING;
-                else if (command.equals(STOP_GAME)) return END;
-                else throw new InputMismatchException();
+                if (command.equals(STOP_GAME)) return END;
+                throw new InputMismatchException();
             } catch (InputMismatchException e) {
                 System.out.println("[ERROR] 잘못된 입력입니다.");
             }

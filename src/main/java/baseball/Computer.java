@@ -34,11 +34,11 @@ class Computer {
     public void printMessage(int strike, int ball) {
         if (strike + ball == 0) {
             System.out.println("낫싱");
-        } else {
-            String message = "";
-            if (strike > 0) message += (Integer.toString(strike) + "스트라이크 ");
-            if (ball > 0) message += (Integer.toString(ball) + "볼");
-            System.out.println(message);
+            return;
         }
+        String message = "";
+        if (strike > 0) message += (Integer.toString(strike) + "스트라이크 ");
+        if (ball > 0) message += (Integer.toString(ball) + "볼");
+        System.out.println(message);
     }
 }
