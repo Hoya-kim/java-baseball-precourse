@@ -27,9 +27,20 @@ public class Game {
 
     private void startGame() {
         // Set computer's answer
-        this.computer.createAnswer();
+        computer.createAnswer();
 
+        int corrected = -1;
         // Finished, if correct answer
+        do {
+            player.pitchBalls();
+            int[] pitchings = player.getPitchings();
+
+            // scoring
+            corrected = computer.scorePitchings(pitchings);
+            if (corrected == FULFILLED) {
+                System.out.println("3개의 숫자를 모두 맞히셨습니다! 게임 끝");
+            }
+        } while(corrected != FULFILLED);
     }
 
     private int requestRestart() {
