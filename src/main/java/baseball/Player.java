@@ -23,7 +23,6 @@ class Player {
         } while(!isValid);
     }
 
-    // 3자리 수 입력
     private boolean inputBalls() {
         System.out.print("숫자를 입력해 주세요 : ");
         String input = Console.readLine();
@@ -40,7 +39,6 @@ class Player {
         return false;
     }
 
-    // 입력의 길이 확인
     private boolean checkStringLength(int maxSize, String numString) {
         if(numString.length() <= maxSize) return true;
         else return false;
