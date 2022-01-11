@@ -37,8 +37,8 @@ class Computer {
             return;
         }
         String message = "";
-        if (strike > 0) message += (Integer.toString(strike) + "스트라이크 ");
-        if (ball > 0) message += (Integer.toString(ball) + "볼");
+        if (strike > 0) message += (strike + "스트라이크 ");
+        if (ball > 0) message += (ball + "볼");
         System.out.println(message);
     }
 }

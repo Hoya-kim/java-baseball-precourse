@@ -1,8 +1,6 @@
 package baseball;
 
-import java.util.HashMap;
 import java.util.InputMismatchException;
-import java.util.Map;
 import nextstep.utils.Console;
 
 import static utils.Constant.*;
@@ -19,16 +17,16 @@ class Player {
     }
 
     public void pitchBalls() {
-        boolean isValid = true;
-        do {
-            isValid = inputBalls();
-        } while(!isValid);
+        boolean isValid;
+
+        do isValid = inputBalls();
+        while(!isValid);
     }
 
     private boolean inputBalls() {
         System.out.print("숫자를 입력해 주세요 : ");
         String input = Console.readLine();
-        try{
+        try {
             boolean checkLength = checkStringLength(PITCHING_LENGTH, input);
             if(!checkLength) throw new InputMismatchException();
             setPitchings(stringToArray(input));

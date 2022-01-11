@@ -38,7 +38,7 @@ public class Game {
             // scoring
             corrected = computer.scorePitchings(pitchings);
             if (corrected == FULFILLED) {
-                System.out.println("3개의 숫자를 모두 맞히셨습니다! 게임 끝");
+                System.out.println(FULFILLED + "개의 숫자를 모두 맞히셨습니다! 게임 끝");
             }
         } while(corrected != FULFILLED);
     }
