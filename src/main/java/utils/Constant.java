@@ -8,7 +8,7 @@ public class Constant {
     public static final int MIN_NUMBER = 1;
     public static final int MAX_NUMBER = 9;
 
-    public static final String ANSWER = String.valueOf(PITCHING_LENGTH);
+    public static final int FULFILLED = PITCHING_LENGTH;
 
     // Game status
     public static final int ON_GOING = 1;
